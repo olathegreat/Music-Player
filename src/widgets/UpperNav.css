@@ -1,0 +1,81 @@
+.upperNav{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    height: auto;
+    
+}
+.upperNav img{
+    width: 30px;
+    height: 30px;
+    margin-right: 50px;
+}
+.search{
+    font-size: 20px;
+    display: flex;
+    color: rgb(53, 52, 52);
+}
+input{
+    outline: none;
+    background: none;
+    border: none;
+    margin-left: 20px;
+    color: lightgrey;
+    
+}
+.uppernav-left{
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    color: lightgray;
+}
+.uppernav-left img{
+    margin-left: 15px;
+}
+.uppernav-left .mobile{
+    display: none;
+}
+.overleft{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #1e1e1e;
+    height: 100vh;
+    padding-right:20%;
+    padding-top: 10%;
+    animation: slide 1s ease;
+
+}
+@keyframes slide {
+    0%{
+        transform: translateX(-300px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+    
+}
+
+
+@media screen and (max-width:600px) {
+    .upperNav{
+        padding-left: 30px;
+        
+        width: auto;
+    }
+    .uppernav-left .mobile{
+        display: block;
+    }
+    
+    .search{
+        display: flex;
+        
+        justify-content: right;
+        flex: 3;
+    }
+    input{
+        display: none;
+    }
+    
+}

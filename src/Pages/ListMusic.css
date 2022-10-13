@@ -1,0 +1,98 @@
+.listmusic{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.listmusic-middle{
+    display: flex;
+    margin-top: 30px;
+   width:  100vw;
+}
+
+.listmusic .cards{
+    display: flex;
+}
+.listmusic-widgets{
+    display: flex;
+}
+.listmusic-widget{
+    margin-right: 10px;
+    background: orange;
+    padding: 5px 10px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    color: white;
+
+
+}
+.listmusic-widget:last-child{
+    background: transparent;
+    border: 1px solid white;
+}
+.listmusic-middle-right{
+    margin-left: 40px;
+}
+.firstcard{
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+    margin-right: 20px;
+    position: relative;
+}
+.firstcard img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+.firstcard-text{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+}
+.listmusic .icons{
+    display: none;
+
+}
+.bottomstripe{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@media screen and (max-width:500px) {
+.no-mobile-display{
+    display: none;
+}
+.cards{
+    flex-direction: column;
+}
+.firstcard{
+    margin-bottom: 10px;
+}
+
+.listmusic .icons{
+    display: block;
+}
+    
+
+   
+    .firstcard {
+        width: 100%;
+        height: auto;
+    }
+}

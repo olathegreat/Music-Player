@@ -1,0 +1,76 @@
+a{
+    color: inherit;
+    text-decoration: none;
+}
+a:hover{
+    color: inherit;
+}
+.Topchart{
+    color: lightgray;
+    width: inherit;
+    margin-left: 50px;
+    height: inherit;
+}
+.Topchart h1{
+    font-weight: 500;
+}
+.Topchart .playlistcard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(27, 27, 27, 0.2);
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding-right: 10px;
+    
+}
+.Topchart .playlistcard .left{
+    display: flex;
+    justify-content: space-between;
+}
+.Topchart .playlistcard .details{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.Topchart h3, .Topchart h6, .Topchart h5{
+    font-weight: 300;
+    
+}
+.Topchart .right{
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-top: 10%;
+    margin-left: 50px;
+    
+}
+
+.Topchart h3{
+    font-size: .8em;
+    font-weight: 500;
+}
+.Topchart h6{
+    font-size: .5em;
+    font-weight: 200;
+}
+.Topchart h5{
+    font-size: .6em;
+    font-weight: 500;
+}
+.Topchart .playlistcards{
+    margin-top: 20px;
+}
+
+@media  screen and (max-width:500px) {
+   .Topchart{
+    margin-left: 0;
+    
+
+   }
+}

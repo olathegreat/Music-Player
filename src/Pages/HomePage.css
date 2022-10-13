@@ -1,0 +1,109 @@
+.Homepage .middle{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    margin-top: 30px;
+    width: 100vw;
+    padding: 20px;
+
+    
+    
+    
+    
+}
+.secondmiddle{
+    width: 70%;
+    object-fit: cover;
+}
+.Homepage  .top{
+    width: 100%;
+}
+    
+
+.Homepage{
+    overflow: hidden;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Homepage .bottom{
+    color: white;
+    margin-top: 50px;
+    width: 100%;
+    margin-left: 8%;
+}
+
+.releasecardflex{
+    display: flex;
+    color: lightgray;
+    font-size: 1em;
+    margin-top: 20px;
+    overflow-x: hidden;
+    justify-content: space;
+}
+
+.releasecard img{
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+}
+.releasecard{
+    margin-right: 20px;
+}
+.player{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    
+}
+
+@media  screen and (max-width:800px) {
+    .Homepage .middle{
+        
+        flex-direction: column;
+    }
+    .mobilenone{
+        display: none;
+    }
+    .Homepage .secondmiddle{
+        width: 100%;
+    }
+    .Homepage .thirdmiddle{
+        width: 100%;
+        margin-top: 20px;
+    }
+ }
+@media  screen and (max-width:500px) {
+    .mobilenone{
+        display: none;
+    }
+    .Homepage .middle{
+        
+        flex-direction: column;
+    }
+    .Homepage .secondmiddle{
+        margin-bottom: 50px;
+    }
+    .Homepage .secondmiddle{
+        width: 100%;
+    }
+    .Homepage .bottom{
+        margin-left: 0;
+    }
+    .Homepage .thirdmiddle{
+        width: 100%;
+    }
+    .Homepage .releasecardflex {
+        overflow-x: auto ;
+    }
+}

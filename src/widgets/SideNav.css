@@ -1,0 +1,32 @@
+.sidenav{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-between;
+    color: rgb(52, 52, 52);
+    
+    font-size: 2em;
+    padding-top: 0;
+    width: fit-content;
+
+}
+.side-upper{
+    display: flex;
+    flex-direction: column;
+    background-color: #171717;
+    padding: 20px 10px;
+    border-radius: 25px;
+    margin-bottom: 80%;
+}
+.side-lower{
+    display: flex;
+    flex-direction: column;
+    background-color: #171717;
+    padding: 20px 10px;
+    border-radius: 25px ;
+    justify-content: baseline;
+}
+.icon{
+    margin-bottom: 30px;
+}

@@ -1,0 +1,27 @@
+
+
+.mobilesidenav{
+    color:  rgb(113, 112, 112);
+    font-weight: 300;
+    font-size: .7em;
+    padding: 30px 20px;
+    width: fit-content;
+    
+    
+}
+
+.sidetag{
+    margin-left: 20px;
+}
+.flex{
+    margin-bottom: 20px;
+}
+.active{
+    color: white;
+}
+.cancel{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 1.5em;
+}
